@@ -128,7 +128,7 @@
             $row2=mysqli_fetch_assoc($result2);
 
         echo '
-        <div class="media my-3">
+        <div class="media my-3 py-3">
             <img src="img/user.jpg" width="64px" height="64px" class="mr-3" alt="...">
             <div class="media-body">
                 <h5 class="mt-0"><a class="text-dark" href="thread.php?threadid='. $id .'">'. $title .'</a></h5>

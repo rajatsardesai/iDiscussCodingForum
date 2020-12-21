@@ -65,11 +65,13 @@
             <h1 class="display-4"><?php echo $title ?></h1>
             <p class="lead"><?php echo $desc ?></p>
             <hr class="my-4">
-            <p>No Spam / Advertising / Self-promote in the forums. ...
-                Do not post copyright-infringing material. ...
-                Do not post “offensive” posts, links or images. ...
-                Do not cross post questions. ...
-                Remain respectful of other members at all times.</p>
+            <p><ul>
+                <li>No Spam / Advertising / Self-promote in the forums. ...</li>
+                <li>Do not post copyright-infringing material. ...</li>
+                <li>Do not post “offensive” posts, links or images. ...</li>
+                <li>Do not cross post questions. ...</li>
+                <li>Remain respectful of other members at all times.</li>
+                </ul></p>
             <p>Posted By <em><b><?php echo $posted_by?></b></em></p>
         </div>
     </div>
@@ -120,7 +122,7 @@
         $row2=mysqli_fetch_assoc($result2);
 
     echo '
-    <div class="media my-4">
+    <div class="media my-4 py-3">
         <img src="img/user.jpg" width="64px" height="64px" class="mr-3" alt="...">
         <div class="media-body">
         <p class="font-weight-bold my-0">'. $row2['user_email'] .'  at '. $comment_time .'</p>
